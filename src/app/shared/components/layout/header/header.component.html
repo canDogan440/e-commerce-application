@@ -1,0 +1,45 @@
+<div class="header-wrapper" [ngClass]="{'scrolled': isScrolled}">
+    <div class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="header-logo-search-content">
+                    <div class="logo" [ngClass]="{'scrolled': isScrolled}">
+                        <a href="/">
+                            LOGO
+                        </a>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="header-navigation-content" *ngIf="!isPageCheckout">
+                    <div class="navigation-content">
+                        <div>
+                            <button-with-icon [isScrolled]="isScrolled" [btnLabel]="'LANDI Wetter'" [isDisabled]="false"
+                                [iconName]="'weather'">
+                                <fa-icon [icon]="fa-user"></fa-icon>
+                            </button-with-icon>
+                            <button-with-icon></button-with-icon>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" navigation-header-wrapper">
+    <div class="navigation-header">
+        <div class="navigation-header-container">
+            <div class="navigation-header-content">
+                <div class="input-box" *ngIf="!isPageCheckout">
+                    <select-component [options]=options></select-component>
+                    <select-component [options]=options></select-component>
+                    <select-component [options]=options></select-component>
+                    <button class="search-button">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

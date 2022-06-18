@@ -1,0 +1,55 @@
+@import "../../../../../../assets/styles/_breakpoints"
+@import "../../../../../../assets/styles/_colors"
+*
+    font-family: myriad-pro, "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+    font-weight: 400
+
+.card
+    width: 90%
+    height: 100%
+    @include breakpoint(md)
+        width: 100%
+
+.header
+    color: $orange
+    font-size: 17px
+    margin-bottom: 20px 
+    @include breakpoint(md)
+        font-size: 12px
+    @include breakpoint(lg)
+        font-size: 14px
+
+
+.content
+    button
+        background-color: $pink
+        color: $darkBlue
+        border: none
+        border-radius: 5px
+        padding: 10px 20px
+        font-size: 16px
+        cursor: pointer
+        margin: 2px 0 10px 0
+        width: 100%
+
+        &:hover
+            background-color: $orange
+            color: $blue
+    li
+        list-style-type: none
+        font-size: 18px
+        line-height: 20px
+        margin-bottom: 20px
+        @include breakpoint(lg)
+            font-size: 16px
+            line-height: 15px
+
+        a
+            color: #fff
+            text-decoration: none
+            &:hover
+                color: $orange
+
+.inner-content
+
+    display: flex

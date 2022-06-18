@@ -1,0 +1,31 @@
+<!-- Will impl modal container -->
+<div class="layout-wrapper">
+    <div class="layout-header">
+        <div class="layout-header-container">
+            <ng-container *ngTemplateOutlet="header || defaultHeader"></ng-container>
+        </div>
+    </div>
+
+    <div class="layout-body">
+        <div class="layout-body-container">
+            <div class="content-wrapper">
+                CONTENT
+            </div>
+
+        </div>
+    </div>
+
+    <div class="layout-footer">
+        <div class="layout-footer-container">
+            <ng-container *ngTemplateOutlet="footer || defaultFooter"></ng-container>
+        </div>
+    </div>
+</div>
+
+<ng-template #defaultHeader>
+    <header #refHeader> </header>
+</ng-template>
+
+<ng-template #defaultFooter>
+    <footer #refFooter> </footer>
+</ng-template>

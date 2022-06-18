@@ -1,0 +1,187 @@
+@import "../../../../../assets/styles/_breakpoints"
+@import "../../../../../assets/styles/_colors"
+
+*
+    transition: all 0.6s
+
+.main-logo
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+.navigation-header-wrapper
+    height: 350px
+    background-color: #EDBEB0
+    @include breakpoint(md)
+        display: none
+
+.navigation-header
+    display: flex
+    height: inherit
+    justify-content: center
+
+.navigation-header-container
+    display: flex
+
+.navigation-header-content
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+
+    @include breakpoint(xl)
+        width: 997px
+    @include breakpoint(none)
+        width: 1200px
+    @include breakpoint(lg)
+        width: 740px
+
+.navigation-header-button
+    width: 100%
+
+.header-wrapper
+    box-shadow: 0px 10px 10px -7px rgba(0,0,0,0.75)
+    background: #39395f
+    height: 90px
+    position: fixed
+    top: 0
+    width: 100%
+    &.scrolled
+        height: 65px
+    @include breakpoint(lg)
+        height: 75px
+    @include breakpoint(md)
+        height: 40px
+
+.main-header-scroll
+    height: 75px
+    @include breakpoint(md)
+        height: 50px
+
+.header
+    display: flex
+    // height: inherit
+    align-content: center
+    justify-content: center
+    @include breakpoint(md)
+        display: inherit
+
+.header-container
+    margin-left: 15px
+    margin-right: 15px
+    display: flex
+    justify-content: center
+    @include breakpoint(md)
+        margin-left: 0px
+        margin-right: 0px
+        height: 40px
+
+.header-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    @include breakpoint(xl)
+        // display: none
+        width: 997px
+    @include breakpoint(none)
+        width: 1200px
+    @include breakpoint(lg)
+        width: 740px
+    @include breakpoint(md)
+        display: flex
+        justify-content: space-between
+
+.header-logo-search-content
+    display: flex
+    flex-basis: 50%
+    justify-content: space-between
+    align-items: center
+    @include breakpoint(md)
+        flex: 1
+
+.header-navigation-content
+    display: flex
+    flex-grow: 1
+    @include breakpoint(md)
+        height: 40px
+        flex: 1
+
+.inherit-md
+    width: inherit
+    height: inherit
+    @include breakpoint(md)
+        width: 100%
+
+.display-flex-md
+    display: flex
+    @include breakpoint(md)
+        display: none
+
+.display-none-md
+    display: none
+    @include breakpoint(md)
+        display: block
+
+.logo
+    background-color: #fff
+    height: 90px
+    width: 240px
+    a
+        width: 100%
+        height: 100%
+        background: #fff
+    @include breakpoint(lg)
+        height: 75px
+    @include breakpoint(md)
+        height: 40px
+        width: 83px
+    &.scrolled
+        height: 65px
+
+.input-box
+    height: 73px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 40px
+    overflow: hidden
+    background-color: #fff
+    @include breakpoint(md)
+        height: 28px
+
+.search-button
+    width: 120px
+    padding: 2px
+    border: none
+    cursor: pointer
+    height: 100%
+    background: $blue
+    &:hover
+        background: $darkBlue
+    @include breakpoint(md)
+        align-self: center
+        padding: 8px
+
+.navigation-content
+    width: 100%
+    display: flex
+    flex-grow: 1
+    justify-content: space-between
+    @include breakpoint(md)
+        height: 40px
+
+.spacer
+    display: flex
+    flex-basis: 10%
+    @include breakpoint(lg)
+        flex-basis: 5%
+.logo
+
+    a
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 36px
+        width: 100%

@@ -1,0 +1,24 @@
+<div class="card">
+
+    <div class="header" [ngClass]="{'border-for-content': buttonText || content }">
+        <p>{{title}}</p>
+    </div>
+
+    <div class="content" *ngIf="buttonText">
+        <button (click)="onButtonClick($event)">{{buttonText}}</button>
+    </div>
+
+    <div class="content" *ngIf="content">
+        <ul>
+            <li *ngFor="let link of content">
+                <a href={{anchorLinks}} >{{link}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="inner-content">
+        <ng-content>
+        </ng-content>
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+<button class="button-with-icon {{color}} " (click)="onButtonClick($event)" [disabled]="isDisabled"
+    [ngClass]="btnClass">
+    <div class="button-with-icon-content">
+        <div class="button-with-icon-icon">
+            <ng-container></ng-container>
+        </div>
+        <p class="button-with-icon-text" [ngClass]="{'page-down': isScrolled}"> {{ btnLabel }} </p>
+    </div>
+</button>

@@ -1,0 +1,122 @@
+@import "../../../../../assets/styles/_breakpoints"
+@import "../../../../../assets/styles/_colors"
+
+*
+    color: #fff
+
+.footer
+
+    height: 670px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    background-color: $blue
+    @include breakpoint(md)
+        height: 800px
+
+.top-wrapper
+    display: flex
+    flex-direction: column
+    padding-top: 40px
+    padding-bottom: 40px
+    @include breakpoint(xl)
+        width: 997px
+    @include breakpoint(none)
+        width: 1200px
+    @include breakpoint(lg)
+        width: 740px
+    @include breakpoint(md)
+        height: 85%
+        width: 95%
+.footer-card
+    width: 25%
+    @include breakpoint(md)
+        width: 40%
+        height: 30%
+.footer-card-media
+    width: 50%
+    height: 100%
+    @include breakpoint(md)
+        height: 33%
+        margin-right: 15px
+
+.full-screen-view-on-mobile
+    @include breakpoint(md)
+        width: 100%
+
+.media-view-container
+    display: flex
+    width: 50%
+    @include breakpoint(md)
+        width: 100%
+
+.footer-top
+    // height: 40%
+    padding-bottom: 20px
+    width: 100%
+    display: flex
+    @include breakpoint(md)
+        height: 60%
+        flex-direction: column
+
+.footer-body
+    height: 45%
+    padding-top: 20px
+    width: 100%
+    display: flex
+    // margin-top: 40px
+
+    @include breakpoint(md)
+        height: 30%
+        flex-direction: column
+        margin: 30px 0 0 0
+.icon-containers
+    @include breakpoint(md)
+        width: 100%
+        height: 33%
+
+.bottom-wrapper
+    background-color: $pink
+    width: 100%
+    height: 33%
+    display: flex
+    justify-content: center
+    bottom: 0
+    @include breakpoint(md)
+        height: 17%
+
+.footer-bot
+    height: 100%
+    width: 85%
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include breakpoint(xl)
+        width: 997px
+    @include breakpoint(none)
+        width: 1200px
+    @include breakpoint(lg)
+        width: 740px
+    p
+        margin-bottom: 15px
+        font-size: 16px
+.link-container
+    height: 60%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    @include breakpoint(md)
+        flex-direction: column
+    a
+        font-size: 16px
+        text-decoration: none
+        margin-left: 20px
+        &:hover
+            text-decoration: underline
+.mobile-view-display-none
+    @include breakpoint(md)
+        display: none
+.icon-wrapper
+    display: flex

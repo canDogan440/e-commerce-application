@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import /src/assets/styles/breakpoints, /src/assets/styles/colors, /src/assets/styles/grid, /src/assets/styles/fonts
+
+*
+    margin: 0
+    padding: 0
+
+
+/* Button Link Text */
+button p
+    font-size: 1rem
+
+/* Teaser Link Text */
+.card p
+    @include breakpoint(md)
+        font-size: 0.875rem
+    @include breakpoint(none)
+        font-size: 1rem
+
+@font-face
+    font-family: "Myriad-Pro-Bold"
+    src: url(/src/assets/fonts/Myriad-Pro-Bold/Myriad-Pro-Bold.ttf) format('woff')
+
+@font-face
+    font-family: "Myriad-Pro-Regular"
+    src: url(/src/assets/fonts/Myriad-Pro-Regular/Myriad-Pro-Regular.ttf) format('woff')
